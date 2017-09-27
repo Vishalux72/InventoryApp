@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">InventoryApp</string>
+
+   <string name="action_name_insert_new_product">Insert new product</string>
+    <string name="action_delete_all_product">Delete all the product</string>
+    <string name="action_save">Save</string>
+    <string name="action_delete">Delete</string>
+</resources>

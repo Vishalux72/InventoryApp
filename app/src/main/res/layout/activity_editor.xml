@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.bahubali.inventoryapp.EditorActivity">
+
+    <!--Name of the product-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!--Label-->
+        <TextView
+            android:text="Product"
+            android:id="@+id/text_overview"
+            style="@style/CategoryStyle"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+            <!--Name fields-->
+            <EditText
+                android:id="@+id/edit_text_name"
+                android:hint="Name of the product"
+                style="@style/EditorFieldStyle"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <!--Price-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!--Label-->
+        <TextView
+            android:id="@+id/text_price"
+            android:text="Price"
+            style="@style/CategoryStyle"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+            <!--Input field-->
+            <EditText
+                android:hint="INR"
+                android:id="@+id/edit_text_price"
+                style="@style/EditorFieldStyle"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+    <!--Quantity available-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!--label-->
+        <TextView
+           android:text="Quantity"
+            style="@style/CategoryStyle"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+            <!--Input field-->
+            <Spinner
+                android:hint="available"
+                android:id="@+id/spinner_quantity"
+                android:layout_height="48dp"
+                android:layout_width="wrap_content"
+                android:paddingRight="16dp"
+                android:spinnerMode="dropdown"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+  <!--Supplier of the product-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--Label-->
+        <TextView
+            android:id="@+id/text_view_supplier"
+            android:text="Supplier"
+            style="@style/CategoryStyle"
+            />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+            <!--Input field-->
+            <EditText
+                android:hint="Name of the supplier"
+                android:id="@+id/edit_text_supplier"
+                style="@style/EditorFieldStyle"/>
+        </LinearLayout>
+
+
+
+
+
+   </LinearLayout>
+</LinearLayout>
